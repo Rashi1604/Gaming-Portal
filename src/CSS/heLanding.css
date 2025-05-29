@@ -1,0 +1,306 @@
+.form-bg {
+    background-image: url("../Media/Images/bg/he-bg-new.jpg"), linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3) ); 
+    background-size:cover;
+    background-blend-mode :overlay;
+    background-repeat: no-repeat;
+    height: 150vh;
+    position: relative;
+    /* top: 0;
+    left: 0;
+    width: 100%; */
+    background-position: center;
+}
+
+.content p {
+    color: #ffff;
+    text-align: justify;
+    font-weight: 600;
+    font-size: 15px;
+    border: 1px solid #d31b88;
+    padding: 12px 23px;
+}
+.content>P:last-child{
+    font-size: 12px;
+    text-align: center;
+}
+
+.content:last-child{
+    font-size: 12px;
+}
+.cus-otp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 22px;
+}
+
+.btn-top-he {
+    position: absolute;
+    top: 25px;
+    right: 31px;
+    cursor: pointer;
+}
+.english {
+    background: #fff;
+    padding: 7px 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    color: #0896d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.he-btn {
+    background-color: #d31b88;
+    padding: 9px;
+    border-radius: 6px;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+}
+
+.english p{
+  margin: 0;
+  font-size: 14px;
+  color: white;
+}
+.form-horizontal {
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+    backdrop-filter: blur(1px);
+    filter: saturate(200%);
+    background-color: rgba(214, 214, 214, 0.2);
+    padding: 40px 50px;
+    border-radius: 5px;
+    max-width: 556px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 88px;
+}
+.form-horizontal .heading{
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .form-bg {
+        height: 160vh;
+    }
+    .form-horizontal .heading {
+        font-size: 15px;
+    }
+    .content p {
+        font-size: 14px;
+    }
+}
+.form-horizontal .form-group{
+    margin: 0 0 15px 0;
+    position: relative;
+}
+.form-horizontal .form-group:last-child{ margin: 0; }
+.form-horizontal .form-control{
+    height: 40px;
+    background: #fff;
+    border: 1px solid #d8d8d8;
+    box-shadow: none;
+    padding: 0 50px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #7f8291;
+    transition: all 0.3s ease 0s;
+}
+.form-horizontal .form-control[type=email]{ margin-bottom: 12px; }
+.form-horizontal .form-control[type=password]{ padding: 0 75px 0 20px; }
+.form-horizontal .form-control:focus{
+    box-shadow: none;
+    outline: 0 none;
+}
+.form-horizontal .form-group label{
+    color: #7f8291;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 10px;
+}
+.form-horizontal .show-hide{
+    position: absolute;
+    top: 49.5%;
+    right: 10px;
+}
+.form-horizontal .show-hide span{
+    padding: 5px 12px;
+    float: right;
+    background: #f5efbb;
+    font-size: 14px;
+    font-weight: bold;
+    color: #746f31;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form-horizontal .main-checkbox{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background: #0896d8;
+    float: left;
+    margin: 5px 0 0 0;
+    border: 1px solid #0896d8;
+    position: relative;
+}
+.form-horizontal .main-checkbox label{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.form-horizontal .main-checkbox label:after{
+    content: "";
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    border: 3px solid #fff;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+    opacity: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+input{
+    direction: ltr;
+}
+.form-horizontal .main-checkbox input[type=checkbox]{ visibility: hidden; }
+.form-horizontal .main-checkbox input[type=checkbox]:checked + label:after{ opacity: 1; }
+.form-horizontal .text{
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    /* color: #8b8b8b; */
+    margin-left: 7px;
+    line-height: 20px;
+    padding-top: 5px;
+    text-transform: capitalize;
+    direction: ltr !important;
+}
+.form-horizontal .btn{
+    width: 100%;
+    background: #0896d8;
+    padding: 12px 20px;
+    border: none;
+    box-shadow: 0 3px 0 #0075ab;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+}
+.form-horizontal .btn:focus{
+    background: #0896d8;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+}
+.form-horizontal .forgot-pass{
+    width: auto;
+    float: right;
+    background: transparent;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0896d8;
+    line-height: 20px;
+    text-transform: capitalize;
+    padding: 5px 0 0 0;
+    margin-top: 0;
+    box-shadow: none;
+    transition: all 0.3s ease 0s;
+}
+.form-horizontal .forgot-pass:hover,
+.form-horizontal .forgot-pass:focus{
+    background: transparent;
+}
+.form-horizontal .social{
+    display: block;
+    list-style: none;
+    padding: 30px 0 0 0;
+    margin: 20px 0 0 0;
+    position: relative;
+}
+.form-horizontal .social:before{
+    content: "";
+    width: 100%;
+    border-top: 2px solid #d5d8de;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.form-horizontal .social:after{
+    content: "or";
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #c7ccd2;
+    text-align: center;
+    text-transform: uppercase;
+    background: #e1e9f7;
+    margin: 0 auto;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    right: 0;
+}
+.form-horizontal .social li{
+    display: inline-block;
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+}
+.form-horizontal .social li:last-child{ margin-right: 0; }
+.form-horizontal .social li a{
+    display: block;
+    padding: 8px 20px;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 25px;
+    text-transform: uppercase;
+    border-radius: 6px;
+}
+.form-horizontal .social li a i{
+    font-size: 35px;
+    line-height: 0;
+    opacity: 0.5;
+    margin-right: 8px;
+    position: relative;
+    top: 11px;
+}
+.form-horizontal .social li:first-child a{ background: #3163a2; }
+.form-horizontal .social li:last-child a{ background: #00aaf5; }
+@media only screen and (max-width: 479px){
+    .form-horizontal{ padding: 40px 20px; }
+    .form-horizontal .social li a{
+        padding: 8px 5px;
+        font-size: 14px;
+    }
+    .form-horizontal .social li a i{ font-size: 30px; }
+}
+span.phone-icon img {
+    max-width: 28px;
+}
+.phone-icon {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    border-right: 1px solid #d8d8d8;
+    padding: 5px 4px;
+}
