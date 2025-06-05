@@ -15,14 +15,8 @@ import "../CSS/new.css";
 import loader from '../Animations/loader.json'
 import Lottie from "lottie-react";
 import { convert } from "./ShowData";
-
 const Home = () => {
-
-
-
-  // console.log(convert('Tetris Cube'),'dfhghj')
-
-  
+  // console.log(convert('Tetris Cube'),'dfhghj')  
   useEffect(()=>{
     getGamesFromBackend();
   },[]);
@@ -138,17 +132,12 @@ const puzzleCategory = updatedGames.find(cat => cat.category === "Puzzle");
       :
       <>
        <Header data={data}/>
-     
       <>
         <SectionOne data={data} />
         {/* <SlickSliderTop /> */}
-
         <div className="area-bg-one">
-
           {data?.map((e,key)=>{
             count=count+1;
-            // console.log(count);
-            // console.log("e ",e);
             if(e.category==='mostPlayed')
               return(<span key={key}></span>)
             else
@@ -177,7 +166,6 @@ const puzzleCategory = updatedGames.find(cat => cat.category === "Puzzle");
   );
 };
 export default Home;
-
 function filteredGames(games) {
   const removeGames = games?.map(prop => {
       if (prop.category === "Arcade") {
@@ -187,6 +175,5 @@ function filteredGames(games) {
           return prop;
       }
   });
-
   return removeGames;
 }

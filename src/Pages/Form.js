@@ -23,7 +23,6 @@ const Form = () => {
       return await upstreamRedirect();
     }
   }
-
   const upstreamRedirect = async () => {
     let ext_ref = q.get("ext_ref") || 'GH_' + getUuid();
     let redirectUrl
@@ -41,7 +40,7 @@ const Form = () => {
     }
     return window.location.replace(redirectUrl);
   }
-  // check subscription with this =>
+  // check subscription with this.. =>
   const checkSubApi = async (msisdn) => {
     const [e0, data] = await getRequest(
       `/subscribe-user/check-sub?msisdn=${msisdn}`

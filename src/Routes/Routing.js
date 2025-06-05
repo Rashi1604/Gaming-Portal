@@ -14,6 +14,8 @@ import Cookies from "js-cookies";
 import Lottie from "lottie-react";
 import Loader from "../Components/Loader";
 import SubscribeCard from "../Pages/SubscribeCard";
+import Auth from "../Auth";
+import SubscribeAuth from "../SubscribeAuth";
 
 const Routing = () => {
   
@@ -22,15 +24,13 @@ const Routing = () => {
       <Routes>
         {/* <Route path="/" exact={true} element={<Form />} /> */}
         {/* <Route path="/tnc" exact={true} element={<Tnc />} /> */}
-        <Route path="/" exact={true} element={<Home />}></Route>
-        <Route path="/seeAll" exact={true} element={<SeeAll />}></Route>
+        <Route path="/" exact={true} element={<Auth><Home /></Auth>}></Route>
+        <Route path="/seeAll" exact={true} element={<Auth><SeeAll /></Auth>}></Route>
         <Route path="*" exact={true} element={<PageNotFound />}></Route>
         <Route path="/error" exact={true} element={<ErrorPage />}></Route>
         <Route path="/tnc" exact={true} element={< TermsConditions/>}></Route>
         <Route path="/subscribe" exact={true} element={<SubscribeCard/>}></Route>
-
       </Routes>
-   
   </>)
 }
 export default Routing;

@@ -33,14 +33,16 @@ function App() {
   return (
     <>
       <ToastContainer 
-        theme="colored"
-        position='top-center'
-        autoClose={3000}
-        closeOnClick={true}
-        draggable
-        pauseOnHover
+        // theme="colored"
+        // position='top-center'
+        // autoClose={3000}
+        // closeOnClick={true}
+        // draggable
+        // pauseOnHover
+
       />
       <Routing/>
+      {/* <ToastContainer/> */}
     </>
   );              
 }

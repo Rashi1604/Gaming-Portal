@@ -27,7 +27,7 @@ const SectionOne = (data) => {
               <h2 className="tlt fix" data-in-effect="fadeInLeft">
               Portail de<span>jeux</span>
               </h2>
-              <p className="wow fadeInUp" data-wow-delay="2s">
+              <p className="wow fadeInUp mb-2" data-wow-delay="2s">
               DÉCOUVREZ DE NOUVEAUX JEUX BASÉS SUR LES NOUVELLES TECHNOLOGIES, PLEINS DE PLAISIR, DE DIVERTISSEMENT ET DE CONNAISSANCES.
               </p>
                <button onClick={()=>{
